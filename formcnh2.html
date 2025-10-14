@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário da CNH Social</title>
+    <link rel="stylesheet" href="formulariocnhsocial.css">
+</head>
+<body>
+
+    <div class="Cabeçalho">
+        <section class="background-logo">
+            <figure id="logo_cnh">
+                <img src="cnh_social.svg" alt="cnh_social" id="cnhlogo">
+            </figure>
+            <h2 id="titulo_programa">Programa de habilitação gratuita para pessoas de baixa renda.</h2>
+        </section>
+
+        <section class="background-form">
+            <form action="#" method="post" autocomplete="on">
+                <div class="form-dadosp">
+                    <h3 id="dados pessoais">Dados pessoais</h3>
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo:" required>
+                </div>
+
+                <div class="form-dadosp">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o seu endereço de e-mail: (ex: nome@gmail.com)" autocomplete="email" required>
+                </div>
+                
+                <div class="form-dadosp">
+                    <label for="contato">Telefone *</label>
+                    <input type="number" id="telefone" name="telefone" placeholder="Digite o seu número de telefone:" autocomplete="tel"
+                     required>
+                </div>
+
+                <div class="form-dadosp">
+                    <label for="cpf">CPF (Cadastro de Pessoa Física) *</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite o seu CPF (ex: 000.000.000.00):" maxlength="11" required>
+                </div>
+
+                <div class="form-dadosp">
+                    <label for="CEP">CEP (Código de Endereçamento Postal) *</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite o seu CEP (ex: 00000-000):" maxlength="8" required>
+                </div>
+
+                <div class="form-dadosp">
+                    <label for="municipio">Município de residência *</label>
+                    <select id="municipio" name="municipio" required>
+                        <option value="">-- Selecione o seu município --</option>
+                        <option value="AÇAILÂNDIA">AÇAILÂNDIA</option>
+                        <option value="ALCÂNTARA">ALCÂNTARA</option>
+                        <option value="ALDEIAS ALTAS">ALDEIAS ALTAS</option>
+                        <option value="ALTO ALEGRE DO MARANHÃO">ALTO ALEGRE DO MARANHÃO</option>
+                        <option value="ALTO ALEGRE DO PINDARÉ">ALTO ALEGRE DO PINDARÉ</option>
+                        <option value="AMARANTE DO MARANHÃO">AMARANTE DO MARANHÃO</option>
+                        <option value="ARAME">ARAME</option>
+                        <option value="ARARI">ARARI</option>
+                        <option value="AXIXÁ">AXIXÁ</option>
+                        <option value="BACABAL">BACABAL</option>
+                        <option value="BALSAS">BALSAS</option>
+                        <option value="BARÃO DE GRAJAÚ">BARÃO DE GRAJAÚ</option>
+                        <option value="BARRA DO CORDA">BARRA DO CORDA</option>
+                        <option value="BARREIRINHAS">BARREIRINHAS</option>
+                        <option value="BEQUIMÃO">BEQUIMÃO</option>
+                        <option value="BOM JESUS DAS SELVAS">BOM JESUS DAS SELVAS</option>
+                        <option value="BOM LUGAR">BOM LUGAR</option>
+                        <option value="BURITI BRAVO">BURITI BRAVO</option>
+                        <option value="BURITICUPU">BURITICUPU</option>
+                        <option value="CAMPESTRE DO MARANHÃO">CAMPESTRE DO MARANHÃO</option>
+                        <option value="CAROLINA">CAROLINA</option>
+                        <option value="CARUTAPERA">CARUTAPERA</option>
+                        <option value="CAXIAS">CAXIAS</option>
+                        <option value="CHAPADINHA">CHAPADINHA</option>
+                        <option value="CIDELÂNDIA">CIDELÂNDIA</option>
+                        <option value="CODÓ">CODÓ</option>
+                        <option value="COLINAS">COLINAS</option>
+                        <option value="CONCEIÇÃO DE LAGO-AÇÚ">CONCEIÇÃO DE LAGO-AÇÚ</option>
+                        <option value="COROATÁ">COROATÁ</option>
+                        <option value="DAVINÓPOLIS">DAVINÓPOLIS</option>
+                        <option value="ESTREITO">ESTREITO</option>
+                        <option value="GONÇALVES DIAS">GONÇALVES DIAS</option>
+                        <option value="GOVERNADOR NUNES FREIRE">GOVERNADOR NUNES FREIRE</option>
+                        <option value="GRAJAÚ">GRAJAÚ</option>
+                        <option value="ICATÚ">ICATÚ</option>
+                        <option value="IMPERATRIZ">IMPERATRIZ</option>
+                        <option value="ITAPECURÚ-MIRIM">ITAPECURÚ-MIRIM</option>
+                        <option value="ITINGA DO MARANHÃO">ITINGA DO MARANHÃO</option>
+                        <option value="JOÃO LISBOA">JOÃO LISBOA</option>
+                        <option value="LAGO DA PEDRA">LAGO DA PEDRA</option>
+                        <option value="LORETO">LORETO</option>
+                        <option value="MATÕES">MATÕES</option>
+                        <option value="MIRADOR">MIRADOR</option>
+                        <option value="MORROS">MORROS</option>
+                        <option value="PAÇO DO LUMIAR">PAÇO DO LUMIAR</option>
+                        <option value="PASSAGEM FRANCA">PASSAGEM FRANCA</option>
+                        <option value="PAULINO NEVES">PAULINO NEVES</option>
+                        <option value="PAULO RAMOS">PAULO RAMOS</option>
+                        <option value="PEDREIRAS">PEDREIRAS</option>
+                        <option value="PINDARÉ MIRIM">PINDARÉ MIRIM</option>
+                        <option value="PINHEIRO">PINHEIRO</option>
+                        <option value="PIO XII">PIO XII</option>
+                        <option value="PRESIDENTE DUTRA">PRESIDENTE DUTRA</option>
+                        <option value="ROSÁRIO">ROSÁRIO</option>
+                        <option value="SANTA HELENA">SANTA HELENA</option>
+                        <option value="SANTA INÊS">SANTA INÊS</option>
+                        <option value="SANTA LUZIA">SANTA LUZIA</option>
+                        <option value="SANTA RITA">SANTA RITA</option>
+                        <option value="SÃO BENTO">SÃO BENTO</option>
+                        <option value="SÃO JOÃO DO SOTÉR">SÃO JOÃO DO SOTÉR</option>
+                        <option value="SÃO JOÃO DOS PATOS">SÃO JOÃO DOS PATOS</option>
+                        <option value="SÃO JOSÉ DE RIBAMAR">SÃO JOSÉ DE RIBAMAR</option>
+                        <option value="SÃO LUIS">SÃO LUIS</option>
+                        <option value="SÃO LUIZ GONZAGA DO MARANHÃO">SÃO LUIZ GONZAGA DO MARANHÃO</option>
+                        <option value="SÃO MATEUS DO MARANHÃO">SÃO MATEUS DO MARANHÃO</option>
+                        <option value="TIMON">TIMON</option>
+                        <option value="TRIZIDELA DO VALE">TRIZIDELA DO VALE</option>
+                        <option value="TUNTUM">TUNTUM</option>
+                        <option value="TUFILÂNDIA">TUFILÂNDIA</option>
+                        <option value="TUTÓIA">TUTÓIA</option>
+                        <option value="VIANA">VIANA</option>
+                        <option value="VITORINO FREIRE">VITORINO FREIRE</option>
+                    </select>
+                </div>
+
+                <div class="form-dadosp">
+                    <label for="endereço">Endereço * </label>
+                    <input type="text" id="endereço" name="endereço" placeholder="Logradouro (Rua, Avenida, etc.)"required>
+                </div>
+
+                    <div class="form-dadosp">
+                    <label for="endereço">Complemento * </label>
+                    <input type="text" id="endereço" name="endereço" placeholder="Complemento (Apto, Casa, etc.)"required>
+                </div>
+
+                    <div class="form-dadosp">
+                    <label for="numeroend">Número de Endereço * </label>
+                    <input type="text" id="endereço" name="endereço" placeholder="Número de Endereço"required>
+                </div>
+
+                    <div class="form-dadosp">
+                    <label for="nascimento">Data de nascimento * </label>
+                    <input type="text" id="endereço" name="endereço" placeholder="Data de nascimento (dd/mm/aaaa)" maxlength="10" required>
+                </div>
+
+                 <div class="form-dadosp">
+                    <label for="categoriacnh">Dados da CNH *</label>
+                    <select id="cnhcategoria" name="cnhcategoria" required>
+                        <option value="">-- Categorias A e B --</option>
+                        <option value="">A - Motocicleta</option>
+                        <option value="">B - Carro</option>
+                          </select>
+                </div>
+
+                <div class="form-dadosp">
+                    <label for="pcd"> Pessoa com Deficiência *</label>
+                    <select id="pcdcnh" name="pcd1" required>
+                        <option value="">-- Escolha --</option>
+                        <option value="">Sim</option>
+                        <option value="">Não</option>
+                          </select>
+                </div>
+
+                <div class="form-dadosp">
+                    <button type="submit">Aceito enviar o formulário preenchido.
+                    Assumo a total responsabilidade pelas informações aqui prestadas, confirmando que são verdadeiras e que atendo a todas as exigências de elegibilidade da CNH Social MA, sabendo que a omissão ou fraude de dados sujeita-me às penalidades legais.</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+      <footer>
+        <section class="background-logof">
+            <figure id="logo_cnh">
+                <img src="cnh_social.svg" alt="cnh_social" id="cnhlogofooter">
+            </figure>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre nós.</a></li>
+                <li><a href="#">Tire as suas dúvidas.</a></li>
+                <li><a href="#">Entre em contato com a ATI.</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
