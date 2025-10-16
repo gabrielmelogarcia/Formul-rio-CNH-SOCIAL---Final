@@ -31,7 +31,7 @@
                 
                 <div class="form-dadosp">
                     <label for="contato">Telefone *</label>
-                    <input type="number" id="telefone" name="telefone" placeholder="Digite o seu número de telefone:" autocomplete="tel"
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite o seu número de telefone:" autocomplete="tel"
                      required>
                 </div>
 
@@ -141,7 +141,7 @@
 
                     <div class="form-dadosp">
                     <label for="nascimento">Data de nascimento * </label>
-                    <input type="text" id="endereço" name="endereço" placeholder="Data de nascimento (dd/mm/aaaa)" maxlength="10" required>
+                    <input type="text" id="data-nascimento" name="nascimento" placeholder="Data de nascimento (dd/mm/aaaa)" maxlength="10" required>
                 </div>
 
                  <div class="form-dadosp">
@@ -183,6 +183,31 @@
                 <li><a href="#">Entre em contato com a ATI.</a></li>
             </ul>
         </nav>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        
+        var behavior = function (val) {
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        options = {
+            onKeyPress: function (val, e, field, options) {
+                field.mask(behavior.apply({}, arguments), options);
+            }
+        };
+
+        $('#telefone').mask(behavior, options);
+        $('#cpf').mask('000.000.000-00', {reverse: true});
+        $('#cep').mask('00000-000');
+        $('#data-nascimento').mask('00/00/0000');
+        
+    });
+</script>
+
     </footer>
 </body>
 </html>
